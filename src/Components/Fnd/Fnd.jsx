@@ -1,4 +1,5 @@
 import React from 'react';
+import './fnd.css'
 
 const Fnd = ({fnd}) => {
     console.log(fnd)
