@@ -74,6 +74,11 @@ const router = createBrowserRouter([
         path: "/contract",
         element: <Contract></Contract>,
       },
+
+      {
+        path:'*',
+        element:<div>404</div>
+      }
     ],
   },
 ]);
