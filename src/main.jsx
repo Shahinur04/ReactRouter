@@ -7,7 +7,7 @@ import Contract from "./Components/Contract/Contract";
 import About from "./Components/About/About";
 import Header from "./Components/Header/Header";
 import Home from "./Components/Home/Home";
-
+import First from "./Components/First/First";
 
 // const router = createBrowserRouter([
 //   {
@@ -26,30 +26,32 @@ import Home from "./Components/Home/Home";
 //     path: "/dashboard",
 //     element: <h1>My name is Shurov khan </h1>,
 //   },
-  
+
 // ]);
 
-const router=createBrowserRouter([
+const router = createBrowserRouter([
   {
-    path:'/',
-    element:<Home></Home>,
-    children:[
+    path: "/",
+    element: <Home></Home>,
+    children: [
       {
-        path:'/about',
-        element:<About></About>
+        path: "/",
+        element: <First></First>,
       },
       {
-        path:'/contract',
-        element:<Contract></Contract>
-      }
-    ]
-  }
-])
-
+        path: "/about",
+        element: <About></About>,
+      },
+      {
+        path: "/contract",
+        element: <Contract></Contract>,
+      },
+    ],
+  },
+]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-   
     <RouterProvider router={router}></RouterProvider>
   </React.StrictMode>
 );
