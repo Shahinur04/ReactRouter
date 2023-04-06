@@ -1,15 +1,16 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link as ActiveLink } from 'react-router-dom';
 import './header.css'
+import ActiveLink from '../ActiveLink/ActiveLink';
 
 const Header = () => {
     return (
         <nav>
-           <Link to="/">Home</Link>
-           <Link to="/friend">Friend</Link>
-           <Link to="/about">About</Link>
-           <Link to="/contract">Contract</Link>
-           <Link to="/post">Post</Link>
+           <ActiveLink to="/">Home</ActiveLink>
+           <ActiveLink to="/friend">Friend</ActiveLink>
+           <ActiveLink to="/about">About</ActiveLink>
+           <ActiveLink to="/contract">Contract</ActiveLink>
+           <ActiveLink to="/post">Post</ActiveLink>
            
             
         </nav>
