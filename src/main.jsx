@@ -62,7 +62,7 @@ const router = createBrowserRouter([
         path: "post",
         element:<Post></Post>,
         loader:({params})=>
-        fetch(`https://jsonplaceholder.typicode.com/posts${params.post.id}`)
+        fetch(`https://jsonplaceholder.typicode.com/posts`)
       },
       {
         path: "/contract",
